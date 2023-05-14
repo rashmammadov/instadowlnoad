@@ -25,10 +25,10 @@ fetch(url)
   .then(response => response.json())
   .then(data => {
     // Search for the "video_url" value
-    data.videoUrl = searchForVideoUrl(data);
+    const videoUrl = searchForVideoUrl(data);
 
     if (videoUrl) {
-      console.log(videoUrl);
+      data.videoUrl);
     } else {
       console.log("No 'video_url' property found in the JSON data.");
     }
