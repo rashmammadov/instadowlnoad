@@ -1,4 +1,5 @@
-// Replace 'your_link_here' with the actual link containing the JSON data
+module.exports = (data) => {
+    // Replace 'your_link_here' with the actual link containing the JSON data
 const url = 'https://www.instagram.com/reel/CrBqzwlgC_V/?__a=1&__d=dis';
 
 // Function to recursively search for the "video_url" value
@@ -35,3 +36,8 @@ fetch(url)
   .catch(error => {
     console.error('Error:', error);
   });
+
+  
+  return data
+};
+
